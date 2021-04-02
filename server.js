@@ -90,7 +90,13 @@ app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/notes.html"));
 })
 
-// Display index.html when accessing all routes other than /note
+// Displays index.html when accessing / route
+app.get("/", function(req, res) {
+    res.json(path.join(__dirname, "public/index.html"));
+  });
+  
+
+// Display index.html when accessing all other routes
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/index.html"));
 });
