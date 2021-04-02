@@ -88,19 +88,12 @@ app.delete("/api/notes/:id", function (req, res) {
 // Display notes.html when accessing /notes route
 app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/notes.html"));
-})
-
-// Displays index.html when accessing / route
-app.get("/", function(req, res) {
-    res.json(path.join(__dirname, "public/index.html"));
-  });
-  
+});
 
 // Display index.html when accessing all other routes
 app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/index.html"));
 });
-
 
 // Starts the server to begin listening
 // =============================================================

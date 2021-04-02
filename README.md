@@ -27,7 +27,7 @@ The user can perform the following actions:
 * GitHub - Hosts the repository.
 * Heroku - Hosts the application.
 
-Deployed application: 
+Deployed application: https://peaceful-cove-68607.herokuapp.com/
 
 **Application Walkthrough**
 ![Video Walkthrough](https://github.com/cnix273/Note-Taker/blob/main/walkthrough.gif)
